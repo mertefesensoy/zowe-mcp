@@ -40,6 +40,9 @@ don't warrant an entry (CI, chores, internal refactors, docs-only) can carry the
 
 ### Fixed
 
+- Updated production dependencies to address the MCP SDK OAuth credential
+  disclosure, proxy-address IP spoofing, and source-map denial-of-service
+  advisories. The MCP SDK minimum is now 1.32.1 for the server and eval runner.
 - Certificate tool errors now name SAF codes `productReturnCode`/`productReasonCode`,
   matching successful responses. A failing call (for example `showCertificate` on a
   missing label) used to pass the SDK's `esmReturnCode`/`esmReasonCode` keys through
